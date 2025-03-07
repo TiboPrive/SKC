@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter Layout App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="layout-container">
+            <div class="canvas-container">
+                <img id="backgroundImage" src="back.png" alt="Background">
+                <div id="textOverlay"></div>
+            </div>
+        </div>
+        <div class="controls">
+            <input type="text" id="textInput" placeholder="TYPE YOUR TEXT (CAPITAL LETTERS ONLY)" maxlength="30">
+            <button id="generatePDF" class="pdf-button">
+                <img src="pdf.svg" alt="Generate PDF">
+            </button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
